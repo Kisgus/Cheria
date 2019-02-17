@@ -7,7 +7,7 @@ google_analytics:
 # UI configs
 title: "Cheria Portfolio"
 subtitle: "My work"
-author: "Cheria Friis"
+author:
 header:
  title: "Portfolio"
  subtitle: "by Cheria"
