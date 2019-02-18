@@ -1,5 +1,5 @@
 # Base configs
-baseurl: "https://www.cheria.pictures"
+baseurl: "https://www.gustav.tech/Cheria/"
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 google_analytics:
@@ -10,7 +10,7 @@ subtitle: "My work"
 author:
 header:
  title: "Chéria's Portfolio"
- subtitle: "https://www.gustav.tech/Cheria/"
+ subtitle: 
 footer:
  name: "About me"
  bio: "My name is Cheria Essieke, I am born in 1993 and is originally from the Republic of Congo. Next to modelling I am studying Political Science in Germany and working on empowering Afro culture via www.newafro.global"               
