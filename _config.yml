@@ -1,5 +1,5 @@
 # Base configs
-baseurl: "www.cheria.pictures"
+baseurl: "cheria.pictures"
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 google_analytics:
