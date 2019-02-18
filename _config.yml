@@ -9,11 +9,12 @@ title: "Cheria Portfolio"
 subtitle: "My work"
 author:
 header:
- title: "Portfolio"
- subtitle: "by Cheria"
+ title: "Chéria's Portfolio"
+ subtitle:
 footer:
- name: "Wanna get in contact?"
- bio: "Feel free to reach out to me"
+ name: "About me"
+ bio: "Born: 1983"
+      "From: Republic of Congo"               
 web_design: 
 social_urls:
   facebook:
