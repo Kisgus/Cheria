@@ -17,16 +17,25 @@ layout: default
 
     <!-- Main -->
     <div id="main">
-        {% for image in site.static_files %}
-        {% if image.path contains 'fulls' %}
-        <article class="thumb">
-            <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
-                     data-name="{{ image.name }}"/></a>
-            <!--<h2></h2>
-            <p></p>-->
-        </article>
-        {% endif %}
+        {% assign thumb_files = site.static_files | where_exp: "item", "item.path contains 'thumbs'" %}
+        {% assign full_files = site.static_files | where_exp: "item", "item.path contains 'fulls'" %}
+        
+        {% for thumb in thumb_files %}
+            {% assign full_exists = false %}
+            {% for full in full_files %}
+                {% if full.name == thumb.name %}
+                    {% assign full_exists = true %}
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+            
+            {% if full_exists %}
+            <article class="thumb">
+                <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ thumb.name }}" class="image">
+                    <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ thumb.name }}" alt=""
+                         data-name="{{ thumb.name }}"/></a>
+            </article>
+            {% endif %}
         {% endfor %}
     </div>
 
